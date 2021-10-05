@@ -1,7 +1,7 @@
 const inputRef = document.querySelector('#validation-input');
 
 const onInputBlur = (e) => {
-  if (parseInt(e.currentTarget.dataset.length) === e.currentTarget.textLength) {
+  if (parseInt(e.currentTarget.dataset.length) === parseInt(e.currentTarget.value.length)) {
     e.currentTarget.classList.add('valid');
     e.currentTarget.classList.remove('invalid');
   } else {
